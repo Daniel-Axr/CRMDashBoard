@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM Leads Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #4A90E2;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #4A90E2;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+    .status {
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+    .status.open {
+      color: #fff;
+      background-color: #28a745;
+    }
+    .status.pending {
+      color: #fff;
+      background-color: #ffc107;
+    }
+    .status.closed {
+      color: #fff;
+      background-color: #dc3545;
+    }
+  </style>
+</head>
+<body>
+  <h1>CRM Leads</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Status</th>
+        <th>Last Interaction</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>john.doe@example.com</td>
+        <td>(123) 456-7890</td>
+        <td><span class="status open">Open</span></td>
+        <td>2024-11-20</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>jane.smith@example.com</td>
+        <td>(987) 654-3210</td>
+        <td><span class="status pending">Pending</span></td>
+        <td>2024-11-19</td>
+      </tr>
+      <tr>
+        <td>Bob Johnson</td>
+        <td>bob.j@example.com</td>
+        <td>(555) 123-4567</td>
+        <td><span class="status closed">Closed</span></td>
+        <td>2024-11-18</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
